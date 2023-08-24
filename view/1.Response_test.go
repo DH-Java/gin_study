@@ -55,7 +55,7 @@ func TestViewJson(t *testing.T) {
 	router := gin.Default()
 
 	//加载模板目录下所有的模板文件
-	router.LoadHTMLGlob("template/*")
+	router.LoadHTMLGlob("templates/*")
 
 	//在golang中，没有相对文件的路径，他只有相对项目的路径
 	//网页请求这个静态目录的前缀，第二个参数是一个目录，注意，前缀不要重复
